@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/login/main",
+    "pages/index/main",
+    "pages/findMusic/main",
+    "pages/myMusic/main",
+    "pages/friend/main",
+    "pages/my/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "backgroundColor": "#fafafa",
+    "selectedColor": "#333",
+    "borderStyle": "white",
+
+    "list": [{
+      "text": "发现音乐",
+      "pagePath": "pages/findMusic/main",
+      "iconPath": "static/images/findMusic.png",
+      "selectedIconPath": "static/images/findMusic1.png"
+    }, {
+      "text": "我的音乐",
+      "pagePath": "pages/myMusic/main",
+      "iconPath": "static/images/myMusic.png",
+      "selectedIconPath": "static/images/myMusic1.png"
+    }, {
+      "text": "朋友",
+      "pagePath": "pages/friend/main",
+      "iconPath": "static/images/friend.png",
+      "selectedIconPath": "static/images/friend1.png"
+    }, {
+      "text": "账号",
+      "pagePath": "pages/my/main",
+      "iconPath": "static/images/my.png",
+      "selectedIconPath": "static/images/my1.png"
+    }],
+    "position": "bottom"
+  },
+  "usingComponents": {
+    "van-search": "../static/vant-weapp/search/index",
+    "van-toast": "../static/vant-weapp/toast/index",
+    "van-icon": "../static/vant-weapp/icon/index"
+  }
+}
