@@ -22,11 +22,6 @@ export default {
         url:'/pages/login/main'
       })
     },
-    toFindMusic(){
-      wx.switchTab({
-        url:'/pages/findMusic/main'
-      })
-    }
   },
   
   created() {
