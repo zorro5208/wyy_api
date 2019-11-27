@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/findMusic/main",
     "pages/login/main",
     "pages/index/main",
-    "pages/findMusic/main",
     "pages/myMusic/main",
     "pages/friend/main",
     "pages/my/main"

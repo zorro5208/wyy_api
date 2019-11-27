@@ -45,7 +45,6 @@
           <div class="recommend">
             <songBox></songBox>
           </div>
-          
         </van-tab>
         <van-tab title="歌单">内容 2</van-tab>
         <van-tab title="主播电台">内容 3</van-tab>
@@ -57,7 +56,7 @@
 
 <script>
 import search from "../../components/search";
-import songBox from '../../components/songBox'
+import songBox from "../../components/songBox";
 export default {
   data() {
     return {
@@ -71,8 +70,21 @@ export default {
     songBox
   },
 
-  methods: {},
-  created() {}
+  methods: {
+    getData() {
+      this.$wxhttp
+        .get({
+          url: "/personalized/newsong", //连接的网址
+          data: {} //需要的参数
+        })
+        .then(res => {
+          console.log(res);
+        });
+    }
+  },
+  created() {
+    this.getData();
+  }
 };
 </script>
 
@@ -106,7 +118,7 @@ export default {
       color: #999999;
     }
   }
-  .recommend{
+  .recommend {
     width: 100%;
     height: auto;
     padding: 20rpx;
